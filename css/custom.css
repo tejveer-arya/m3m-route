@@ -2849,6 +2849,7 @@ footer.footer{
 .faq-accordion .accordion-body p:last-child{
 	margin-bottom: 0;
 }
+.faq-accordion .accordion-body table thead th, .faq-accordion .accordion-body table tbody td, .faq-accordion .accordion-body table tbody th{background-color: transparent;}
 
 /******************************************/
 /**** 	21. Page Not Found Page css	   ****/
