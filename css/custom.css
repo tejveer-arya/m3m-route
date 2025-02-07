@@ -607,6 +607,8 @@ header.main-header .header-sticky.active{
 	color: var(--white-color);
 }
 
+
+
 /************************************/
 /**** 	    04. Hero css		 ****/
 /************************************/
@@ -2893,8 +2895,10 @@ footer.footer{
 		margin-left: 18px;
 	}
 }
-
+.header-infoo-box{display: none;}
 @media only screen and (max-width: 991px){
+	.header-infoo-box{display: block;background-color: var(--primary-color);width: 45px;height:45px;line-height: 45px;border-radius: 50px;text-align: center;}
+	.header-infoo-box .icon-box img{width:20px}
 	.pt-100{
 		padding-top: 60px;
 	}
@@ -3258,6 +3262,7 @@ footer.footer{
 }
 
 @media only screen and (max-width: 767px){
+	
 	.pt-100{
 		padding-top: 50px;
 	}
@@ -3283,7 +3288,8 @@ footer.footer{
 	}
 
 	.navbar-brand img{
-		max-height: 40px;
+		/* max-height: 40px; */
+		max-height: auto;
 	}
 
 	.hero .hero-section{
@@ -3636,7 +3642,7 @@ footer.footer{
 	}
 
 	.property-overview-box .property-overview-item .icon-box img{
-		max-width: 50%;
+		max-width: 100%;
 	}
 
 	.property-overview-box .property-overview-item .property-overview-content{
@@ -3768,6 +3774,19 @@ footer.footer{
 
 	.agents-page{
 		padding: 50px 0 10px;
+	}
+}
+@media only screen and (max-width: 575px){
+	.property-overview-box .property-overview-item{width:100%}
+	.property-overview-box .property-overview-item .icon-box{padding:5px}
+	.faq-accordion .accordion-item.p-5{padding: 0.5rem!important;}
+	.footer-info-box{
+		display: flex;
+		justify-content: normal;
+	}
+	.footer-info-box p{
+		text-align: left;
+		padding-left: 10px;
 	}
 }
 
